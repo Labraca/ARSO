@@ -3,18 +3,5 @@ data:
   .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiJsYWJyYWNhIiwicGFzc3dvcmQiOiJBUlNPX0dydXBvNSIsImVtYWlsIjoiYW5nZWxsYWJyYWNhQGdtYWlsLmNvbSIsImF1dGgiOiJiR0ZpY21GallUcEJVbE5QWDBkeWRYQnZOUT09In19fQ==
 kind: Secret
 metadata:
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        .: {}
-        f:.dockerconfigjson: {}
-      f:type: {}
-    manager: kubectl
-    operation: Update
   name: regcred
-  resourceVersion: "1409271"
-  selfLink: /api/v1/namespaces/default/secrets/regcred
-  uid: 60818dd2-f5fd-40fc-afe5-2f0ca2f58384
 type: kubernetes.io/dockerconfigjson
