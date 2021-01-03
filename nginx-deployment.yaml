@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginxbueno:latest
+        image: nginxbueno:v0
         ports:
         - containerPort: 80
       imagePullSecrets:
