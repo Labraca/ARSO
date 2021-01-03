@@ -3,7 +3,6 @@ data:
   .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiJsYWJyYWNhIiwicGFzc3dvcmQiOiJBUlNPX0dydXBvNSIsImVtYWlsIjoiYW5nZWxsYWJyYWNhQGdtYWlsLmNvbSIsImF1dGgiOiJiR0ZpY21GallUcEJVbE5QWDBkeWRYQnZOUT09In19fQ==
 kind: Secret
 metadata:
-  creationTimestamp: "2021-01-03T12:10:33Z"
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
@@ -14,9 +13,7 @@ metadata:
       f:type: {}
     manager: kubectl
     operation: Update
-    time: "2021-01-03T12:10:33Z"
   name: regcred
-  namespace: default
   resourceVersion: "1409271"
   selfLink: /api/v1/namespaces/default/secrets/regcred
   uid: 60818dd2-f5fd-40fc-afe5-2f0ca2f58384
