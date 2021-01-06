@@ -6,7 +6,7 @@ metadata:
     app: nginx
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    rancher.io/globalDNS.warso.es
+    rancher.io/globalDNS.warso.es: /
 spec:
   rules:
   - http:
