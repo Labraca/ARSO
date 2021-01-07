@@ -2,9 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: nginx-ingress
+  annotations:
+    rancher.io/globalDNS.warso.es
 spec:
   rules:
-    - host: nginx.warso.es
+    - host: nginx.apps.warso.es
       http:
         paths:
           - backend:
