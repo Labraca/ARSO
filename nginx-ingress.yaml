@@ -1,20 +1,11 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: v1
+kind: Service
 metadata:
-  name: nginx-ingress
-  labels:
-    app: nginx
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    rancher.io/globalDNS.warso.es: /
+  name: my-service
 spec:
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: nginx
-            port:
-              number: 80
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
