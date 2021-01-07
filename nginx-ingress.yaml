@@ -6,7 +6,7 @@ metadata:
     rancher.io/globalDNS.hostname: warso.es
 spec:
   rules:
-    - host: nginx.apps.warso.es
+    - host: nginx.warso.es
       http:
         paths:
           - backend:
