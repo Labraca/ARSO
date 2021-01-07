@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: nginx-ingress
   annotations:
-    rancher.io/globalDNS.hostname: warso.es
+    rancher.io/globalDNS.hostname = warso.es
 spec:
   rules:
     - host: nginx.warso.es
