@@ -3,12 +3,11 @@ kind: Ingress
 metadata:
   name: nginx-ingress
   annotations:
-    rancher.io/globalDNS.hostname = warso.es
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: nginx.warso.es
-      http:
-        paths:
+    - http:
+        paths: /web
           - backend:
               serviceName: nginx-nodeport
               servicePort: 80
