@@ -10,4 +10,4 @@ spec:
         paths: /web
           - backend:
               serviceName: nginx-nodeport
-              servicePort: 80
+              servicePort: 32092
