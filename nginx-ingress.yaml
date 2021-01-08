@@ -7,7 +7,8 @@ metadata:
 spec:
   rules:
     - http:
-        paths: /web
-          - backend:
-              serviceName: nginx-nodeport
-              servicePort: 81
+        paths: 
+        - path: /web
+          backend:
+            serviceName: nginx-nodeport
+            servicePort: 80
