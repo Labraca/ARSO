@@ -18,6 +18,6 @@ spec:
       - name: nginx
         image: labraca/nginxbueno:v0
         ports:
-        - containerPort: 80
+        - containerPort: 8001
       imagePullSecrets:
         - name: regcred
