@@ -12,7 +12,7 @@ spec:
           backend:
             serviceName: nginx-nodeport
             servicePort: 80
-          path: /filezilla
+        - path: /filezilla
           backend:
             serviceName: filezilla-nodeport
             servicePort: 80
