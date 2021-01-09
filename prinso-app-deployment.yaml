@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prinso-app-deployment
+  labels:
+    app: prinso-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prinso-app
+  template:
+    metadata:
+      labels:
+        app: prinso-app
+    spec:
+      containers:
+      - name: prinso-app
+        image: aaronblanco/app_prinso
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: regcred2
