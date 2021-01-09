@@ -3,5 +3,5 @@ data:
   .dockerconfigjson: ewogICAgICAgICJhdXRocyI6IHsKICAgICAgICAgICAgICAgICJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJhdXRoIjogIllXRnliMjVpYkdGdVkyODZNR1EwWkdJMk1XUXROREpoTnkwME5UWmxMVGhtTXpZdE56YzFOMlZqTXpSak5XTmoiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgfQp9
 kind: Secret
 metadata:
-  name: regcred
+  name: regcred2
 type: kubernetes.io/dockerconfigjson
