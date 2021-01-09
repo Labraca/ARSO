@@ -19,6 +19,4 @@ spec:
         image: jlesage/filezilla
         ports:
         - containerPort: 5800
-        volumes:
-        - "/docker/appdata/filezilla:/config:rw"
-        - "$HOME:/storage:rw"
+        
