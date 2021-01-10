@@ -11,5 +11,5 @@ spec:
   ports:
     - nodePort: 30002
       port: 80
-      targetPort: 80
+      targetPort: 5800
       name: prinso-app-port
