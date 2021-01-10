@@ -1,19 +1,19 @@
 [Global]
-auth-url=http://192.128.1.15:5000/v3
+auth-url=http://192.168.64.12:5000/v3/
 #Tip: You can also use Application Credential ID and Secret in place of username, password, tenant-id, and domain-id.
 #application-credential-id=
 #application-credential-secret=
-username=admin
+username=alm685
 # user-id=
-password=passw0rd
+password=admin0
 region=RegionOne
-tenant-id=
-domain-id=
+tenant-id=f83e19cffcf748d3b980cb9e446b4cbe
+domain-id=Default
 
 [LoadBalancer]
 use-octavia=true
-subnet-id=9c018814-f2a8-45dd-9679-5400d49b333a
-floating-network-id=80c9fc78-a2be-45d5-a85b-f17a6c98df92
+subnet-id=ea562d31-e0be-491f-b02e-cc4573fb8343
+floating-network-id=c3a46d0b-de40-42b2-a218-ab2b385c248d
 
 [BlockStorage]
 bs-version=v2
