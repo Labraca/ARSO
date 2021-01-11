@@ -8,6 +8,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  StorageClass: "wordpress-storageclass"
   resources:
     requests:
       storage: 20Gi
