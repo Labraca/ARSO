@@ -21,6 +21,8 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: "wordpress-storageclass"
+  volumeName: wordpress-pv
   resources:
     requests:
       storage: 20Gi
