@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxlb
+  labels:
+    app: nginxlb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginxlb
+  template:
+    metadata:
+      labels:
+        app: nginxlb
+    spec:
+      containers:
+      - name: nginxlb
+        image: labraca/nginxlb:v0
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: regcred
