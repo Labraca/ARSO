@@ -1,7 +1,9 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: wordpress-storageclass
-provisioner: kubernetes.io/cinder
+  name: slow
+provisioner: kubernetes.io/gce-pd
 parameters:
-  availability: nova
+  type: pd-standard
+  fstype: ext4
+  replication-type: none
