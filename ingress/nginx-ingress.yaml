@@ -16,10 +16,6 @@ spec:
           backend:
             serviceName: filezilla-nodeport
             servicePort: 80
-        - path: /app
-          backend:
-            serviceName: prinso-app-nodeport
-            servicePort: 80
         - path: /wordpress
           backend:
             serviceName: wordpress-nodeport
