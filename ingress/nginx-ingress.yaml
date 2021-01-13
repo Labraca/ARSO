@@ -20,7 +20,3 @@ spec:
           backend:
             serviceName: wordpress-nodeport
             servicePort: 80
-        - path: /nginxlb
-          backend:
-            serviceName: nginxlbnew
-            servicePort: 80
