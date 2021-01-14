@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: labraca/nginxbueno:v0
+        image: richarvey/nginx-php-fpm
         ports:
         - containerPort: 80
       imagePullSecrets:
