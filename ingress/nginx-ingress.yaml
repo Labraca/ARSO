@@ -1,22 +1,30 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: ingress-wildcard-host
 spec:
   rules:
-     - http:
-        paths: 
-        - path: /web
-          backend:
-            serviceName: nginx-lb
-            servicePort: 80
-        - path: /filezilla
-          backend:
-            serviceName: filezilla-nodeport
-            servicePort: 80
-        - path: /wordpress
-          backend:
-            serviceName: wordpress-lb
-            servicePort: 80
+  - host: 192.168.64.155
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/filezilla"
+        backend:
+          service:
+            name: filezilla-lb
+            port:
+              number: 80
+      - pathType: Prefix
+        path: "/web"
+        backend:
+          service:
+            name: nginx-lb
+            port:
+              number: 80
+      - pathType: Prefix
+        path: "/wordpress"
+        backend:
+          service:
+            name: wordpress-lb
+            port:
+              number: 80
