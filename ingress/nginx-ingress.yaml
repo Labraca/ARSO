@@ -10,17 +10,13 @@ spec:
         paths: 
         - path: /web
           backend:
-            serviceName: nginx-nodeport
+            serviceName: nginx-lb
             servicePort: 80
         - path: /filezilla
           backend:
-            serviceName: filezilla-nodeport
+            serviceName: filezilla-lb
             servicePort: 80
         - path: /wordpress
           backend:
-            serviceName: wordpress-nodeport
-            servicePort: 80
-        - path: /nginxlb
-          backend:
-            serviceName: nginxlbnew
+            serviceName: wordpress-lb
             servicePort: 80
