@@ -29,9 +29,7 @@ spec:
         app: filezilla
     spec: 
       containers: 
-        - 
-          image: jlesage/filezilla
+        - image: jlesage/filezilla
           name: filezilla
           ports: 
-            - 
-              containerPort: 5800
+            - containerPort: 5800
