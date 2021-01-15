@@ -13,6 +13,14 @@ spec:
           backend:
             serviceName: nginx-lb
             servicePort: 80
+        - path: /css
+          backend:
+            serviceName: nginx-lb
+            servivePort: 80
+        - path: /js
+          backend:
+            serviceName: nginx-lb
+            servivePort: 80
         - path: /filezilla
           backend:
             serviceName: filezilla-lb
