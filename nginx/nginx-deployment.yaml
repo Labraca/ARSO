@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: richarvey/nginx-php-fpm
+        image: labraca/nginxbueno:v0
         command: ["/bin/echo"]
         args: ["HOSTNAME", ">> /home/ip.txt"]
         ports:
