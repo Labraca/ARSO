@@ -4,8 +4,7 @@ metadata:
   name: ingress-wildcard-host
 spec:
   rules:
-  - host: warso.net
-    http:
+  - http:
       paths:
       - pathType: Prefix
         path: "/filezilla"
