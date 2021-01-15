@@ -18,5 +18,5 @@ spec:
             servicePort: 80
         - path: /wordpress
           backend:
-            serviceName: wordpress-nodeport
+            serviceName: wordpress-lb
             servicePort: 80
