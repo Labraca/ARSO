@@ -34,7 +34,7 @@ spec:
         #     memory: 256Mi
         ports:
         - containerPort: 5601
-          name: ui
+          name: kibana
           protocol: TCP
         volumeMounts:
         - name: config
