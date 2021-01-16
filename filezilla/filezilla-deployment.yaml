@@ -26,7 +26,6 @@ spec:
       targetPort: 5800
   selector:
     app: filezilla
-    tier: frontend
   type: LoadBalancer
 ---
 apiVersion: apps/v1
