@@ -2,8 +2,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: slow
-provisioner: kubernetes.io/gce-pd
+provisioner: kubernetes.io/azure-disk
 parameters:
-  type: pd-standard
-  fstype: ext4
-  replication-type: none
+  storageaccounttype: Standard_LRS
+  kind: Shared
