@@ -17,7 +17,3 @@ spec:
           backend:
             serviceName: filezilla-lb
             servicePort: 80
-        - path: /wordpress
-          backend:
-            serviceName: wordpress-lb
-            servicePort: 80
