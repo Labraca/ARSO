@@ -23,6 +23,7 @@ metadata:
 spec:
   ports:
     - port: 80
+      targetPort: 5800
   selector:
     app: filezilla
     tier: frontend
