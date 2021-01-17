@@ -73,4 +73,4 @@ spec:
       storageClassName: do-block-storage
       resources:
         requests:
-          storage: 20Gi
+          storage: 20GiB
