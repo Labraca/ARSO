@@ -4,5 +4,5 @@ metadata:
   name: slow
 provisioner: kubernetes.io/azure-disk
 parameters:
-  storageaccounttype: Standard_LRS
-  kind: Shared
+  skuName: Standard_LRS
+  location: eastus
