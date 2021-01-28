@@ -10,3 +10,7 @@ En estos *clouds* vamos a implementar una serie de servicios y además vamos a c
 ## ¿QUÉ SE QUIERE CONSEGUIR CON ESTE PROYECTO?
 
 En este proyecto pretendemos crear una topología en distintos servidores y con distintos proveedores de servicios y que cualquier persona, a través de nuestros apuntes y ejemplos sea capaz de reproducir lo que nosotros hemos realizado.
+
+Los documentos se encuentran en un pdf junto a la presentación que resume todo el trabajo.
+Los autores:
+Aarón, Angel Luís y Francisco(Paco).
