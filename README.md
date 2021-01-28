@@ -10,11 +10,3 @@ En estos *clouds* vamos a implementar una serie de servicios y además vamos a c
 ## ¿QUÉ SE QUIERE CONSEGUIR CON ESTE PROYECTO?
 
 En este proyecto pretendemos crear una topología en distintos servidores y con distintos proveedores de servicios y que cualquier persona, a través de nuestros apuntes y ejemplos sea capaz de reproducir lo que nosotros hemos realizado.
-
-## CUALIDADES DE LOS CLOUDS UTILIZADOS.
-
-|                   | OpenStack | Google Cloud | Azure Microsoft |
-|-------------------|-----------|--------------|-----------------|
-| Ventajas          |           |              |                 |
-| Desventajas       |           |              |                 |
-| Link del servicio | https://openstack.di.ual.es/ | https://cloud.google.com/ | https://portal.azure.com |
